@@ -4,5 +4,5 @@
 def key_for_min_value(name_hash)
   min_key = ""
   name_hash.map{ |key, value| value < name_hash[min_key] ? min_key = key : nil }
-  end
+  min_key
 end
